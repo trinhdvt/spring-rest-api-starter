@@ -1,5 +1,13 @@
-# Spring REST API Starter
+# Spring REST API Starter 🚀
 
+## Table of Contents
+
+- [What is this repository](#what-is-this-repository)
+- [Dependencies](#dependencies)
+- [Features](#features)
+- [How to use](#how-to-use-this-repository)
+- [Contact](#contact)
+- [Appendix](#appendix)
 
 ## What is this repository
 
@@ -7,10 +15,11 @@ This repository is a starting point for a Spring REST API project. It contains a
 working REST API up and running.
 
 ## Dependencies
+
 <details>
 <summary>Click to expand!</summary>
-   
-| **Stack**           | **Version** | **Description**                                         |
+
+| **Dependency**      | **Version** | **Description**                                         |
 |---------------------|:-----------:|---------------------------------------------------------|
 | Spring Boot         |    2.4.5    | Config Spring-app with Java Annotation                  |
 | Spring Web MVC      |    2.4.5    | Build REST API endpoint                                 |
@@ -30,7 +39,7 @@ working REST API up and running.
 | Bucket4j            |     7.0     | For implement API Rate Limit feature                    |
 
 </details>
-   
+
 ## Features
 
 * Language level and runtime JDK is Java 8
@@ -105,7 +114,7 @@ If you want to ask anything, create an Issue, or contact me [@dvt](https://www.f
 Project structure
 <details>
 <summary>Click to expand!</summary>
-   
+
 ```
 ├── Dockerfile -> Dockerfile to build Docker image
 ├── README.md
@@ -173,4 +182,5 @@ Project structure
             ├── application.yml -> Common configuration
 
 ```
+
 </details>
