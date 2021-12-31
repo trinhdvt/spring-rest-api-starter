@@ -3,11 +3,13 @@
 
 ## What is this repository
 
-This repository is a starting point for a Spring REST API project. It contains all necessary configuration to get a
+This repository is a starting point for a Spring REST API project. It contains all necessary configurations to get a
 working REST API up and running.
 
 ## Dependencies
-
+<details>
+<summary>Click to expand!</summary>
+   
 | **Stack**           | **Version** | **Description**                                         |
 |---------------------|:-----------:|---------------------------------------------------------|
 | Spring Boot         |    2.4.5    | Config Spring-app with Java Annotation                  |
@@ -18,19 +20,21 @@ working REST API up and running.
 | Spring WebSocket    |    2.4.5    | Build WebSocket server                                  |
 | Spring Messaging    |    2.4.5    | Send message over WebSocket                             |
 | Spring Cache        |    2.4.5    | Caching data                                            |
-| Spring AOP          |    2.4.5    | Support Aspect Oriented Programming                     |
+| Spring AOP          |    2.4.5    | Support Aspect-Oriented Programming                     |
 | Caffeine            |    2.9.0    | Memcached library for Java, use for control cached data |
 | MySQL               |     8.x     | Database for application                                |
 | Lombok              |   1.18.22   | Generate common method to reduce boilerplate code       |
 | Java Validation API |    2.0.1    | Validate parameter                                      |
 | JJWT                |    0.9.1    | Creating and verifying JSON Web Token in Java           |
-| Apache Common Text  |     1.9     | Contains several useful method to work with String      |
+| Apache Common Text  |     1.9     | Contains several useful methods to work with String     |
 | Bucket4j            |     7.0     | For implement API Rate Limit feature                    |
 
+</details>
+   
 ## Features
 
 * Language level and runtime JDK is Java 8
-* Spring Eco System 2.4.5
+* Spring EcoSystem 2.4.5
 * Persistence:
 
     * MySQL 8.0
@@ -52,7 +56,7 @@ working REST API up and running.
 * Security
 
     * Authentication with JSON Web Token
-    * Block too many request from same IP Address in a duration of time (API Rate Limit)
+    * Block too many requests from the same IP Address in a duration of time (API Rate Limit)
     * CORS configuration
     * Annotations to restrict endpoints to certain roles
     * Custom `CurrentUser` to get current user information from JWT token
@@ -62,14 +66,14 @@ working REST API up and running.
     * Custom `HttpError` to represent error response
     * Automatic exception handling with `GlobalExceptionHandler` class
 
-* Several utility class to support common task
+* Several utility classes to support common task
 
-    * `MyStringUtils` to support common method to work with String (e.g. escape HTML, generate slug, etc.)
-    * `MyMailSender` to support common method to work with Email
-    * `AssertUtils` to support common method in validating parameter
-    * `SecurityUtils` to support common method to work with Spring Security
+    * `MyStringUtils` to support common methods to work with String (e.g. escape HTML, generate slug, etc.)
+    * `MyMailSender` to support common methods to work with Email
+    * `AssertUtils` to support common methods in validating parameter
+    * `SecurityUtils` to support common methods to work with Spring Security
 
-* Dockerfile to build production-ready image
+* Dockerfile to build a production-ready image
 
 ## How to use this repository
 
@@ -94,12 +98,14 @@ If no error, you are good to go. Now, start coding and run it with `./mvnw sprin
 
 ## Contact
 
-If you want to ask anything, create an Issue or contact me [@dvt](https://www.facebook.com/trinh.dvt/)
+If you want to ask anything, create an Issue, or contact me [@dvt](https://www.facebook.com/trinh.dvt/)
 
 ## Appendix
 
 Project structure
-
+<details>
+<summary>Click to expand!</summary>
+   
 ```
 ├── Dockerfile -> Dockerfile to build Docker image
 ├── README.md
@@ -167,3 +173,4 @@ Project structure
             ├── application.yml -> Common configuration
 
 ```
+</details>
