@@ -1,0 +1,27 @@
+spring:
+  api-limit:
+    enable: true
+  config:
+    import: classpath:application-private.yml
+
+  servlet:
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 3MB
+  jackson:
+    date-format: yyyy-MM-dd HH:mm
+    time-zone: Asia/Ho_Chi_Minh
+
+
+server:
+  compression:
+    enabled: true
+  port: ${PORT:8080}
+
+logging:
+  level:
+    org:
+      springframework:
+        web: INFO
+    com:
+      langthang: DEBUG
